@@ -1,6 +1,4 @@
 
-# Generates the code bit-strings from the parsed instruction parts.
-# The code generator just outputs a text files with one 16-bit instruction per line.
 
 class Code(object):
     def __init__(self):

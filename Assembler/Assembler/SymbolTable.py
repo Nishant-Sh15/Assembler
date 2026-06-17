@@ -1,7 +1,4 @@
 
-
-# Very simple symbol table for the assembler.
-
 class SymbolTable(object):
     def __init__(self):
         # Predefined symbols equate to memory locations

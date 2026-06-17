@@ -3,13 +3,12 @@
 import Parser, Code, SymbolTable, sys
 
 
-
 class Assembler(object):
     def __init__(self):
         self.symbols = SymbolTable.SymbolTable()
         self.symbol_addr = 16
     
-    # first pass: determine memory locations of label definitions: (LABEL)
+    # First pass: determine memory locations of label definitions: (LABEL)
     def pass0(self, file):
         parser = Parser.Parser(file)
         cur_address = 0
@@ -58,7 +57,7 @@ class Assembler(object):
         else:
             return infile + '.hack'    
 
-def main():
+main():
     if len(sys.argv) != 2:
         print( "Usage: Assembler file.asm" )
     else:

@@ -2,8 +2,7 @@
 
 import Lex
 
-# Parser assumes correctly-formed input - no error checking!  Expects program-generated input.
-# Parser just looks ahead one or two tokens to determine what's there.
+
 
 class Parser(object):
     A_COMMAND = 0
